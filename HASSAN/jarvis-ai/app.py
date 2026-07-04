@@ -9,10 +9,9 @@ while True:
 
     elif command == "status":
         status = get_system_status()
-
-        print(f"CPU : {status['cpu_percent']}%")
-        print(f"RAM : {status['memory']['percent']}%")
-        print(f"DISK: {status['disk']['percent']}%")
+        print(f"CPU : {status['cpu']}%")
+        print(f"RAM : {status['ram']}%")
+        print(f"DISK: {status['disk']}%")
 
     elif command.startswith("open "):
         app = command.replace("open ", "")
